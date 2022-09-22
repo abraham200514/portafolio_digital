@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes sociales</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <link rel="icon" href="./images/signosjuntos.png" type="image/x-icon">
+    <style>
+p{
+color:black;
+        }
+</style>
+    
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">Redes sociales</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Inicio</a></li>
+ <li><a href="trabajosenconjunto.html">Trabajos en conjunto</a></li>
+        <li><a href="abraham.html">Abraham</a></li>
+        <li><a href="gerardo.html">Gerardo</a></li>
+        <li><a href="redessociales.html">Redes sociales</a></li>
+		<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner"></div>
+  <div class="about">
+ <div class="content">
+      <div class="title">Redes sociales</div>
+      <p>Aqui podran encontrar nuestras redes sociales donde estamos activos subiendo mas de nuestros trabajos,donde estaremos probando nuevos estilos que esperamos les gusten y asi nos puedan apoyar con este proyecto compratiendo nuestro trabajo con la mayor gente posible ¡gracias!.</p>
+	  <br>
+	 <br>
+	   
+	 <div class="col-12"><a href=https://instagram.com/confihernandezvillegas?igshid=NmNmNjAwNzg==sharing target="_blank"><img src="./images/botona.jpeg" alt="" width="207" height="51"/></a></div>
+	 <br>
+	 <div class="col-12"><a href=https://instagram.com/gera20_gm?igshid=YmMyMTA2M2Y==sharing=sharing target="_blank"><img src="./images/botong.jpeg" alt="" width="207" height="51"/></a></div>
+  
+    
+    </div>
+  </div>
+       
+<div style =" text-align: center "> 
+    <h1>Mas informacion sobre diseño grafico</h1> 
+	
+
+          <br />
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/quCuVZd4sFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+	
+	      &nbsp;&nbsp; 
+        
+
+        <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+      <!-- Site footer -->
+     <footer class="section footer-minimal context-dark">
+        <div class="container wow-outer icon-bg-white">
+          <div class="wow fadeIn">
+            <div class="row row-50 row-lg-60">
+              <div class="col-12"><a href="index.html"><img src="./images/logos.png" alt="" width="300" height="135"/></a></div>
+              <div class="col-12">
+                <ul class="footer-minimal-nav">
+                  <li><a href="contacto.html">Contacto</a></li>
+                  <li><a href="trabajosenconjunto.html">Trabajos en conjunto</a></li>
+                  <li><a href="abraham.html">Abraham</a></li>
+                  <li><a href="gerardo.html">Gerardo</a></li>
+                  <li><a href="redessociales.html">Redes sociales</a></li>
+                </ul>
+              </div>
+              
+            </div>
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Abraham & Gerardo</span><span>.&nbsp;</span><span>All Rights Reserved.</span></p>
+          </div>
+        </div>
+      </footer>
+ 
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
